@@ -410,6 +410,7 @@ a{
 	color: white;
 	font-size: 2.2em;
 	cursor: pointer;
+	display: inline-block;
 }
 
 /*animaciones*/
@@ -475,6 +476,12 @@ a{
 		display: none;
 	}
 
+	/*header*/
+	.header-content{
+		transform: translateX(0);
+		margin: 0;
+	}
+
 	/* servicios */
 	.servicios > .container{
 		justify-content: space-around;
@@ -527,6 +534,9 @@ a{
 }
 
 @media screen and (max-width: 576px){
+	.header-content{
+		width: 90%;
+	}
 	.formulario{
 		width: 90%;
 	}
