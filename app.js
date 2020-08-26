@@ -18,15 +18,13 @@
 	let lastScrollPos = window.scrollY;
 
 	const handleScroll = () => {
-		if(window.scrollY > lastScrollPos){
-			navMain.style.top = '-60px';
-		}else{
-			navMain.style.top = '0';
-		}
-		lastScrollPos = window.scrollY;
-
-		if(navbar.classList.contains('navbar-active')){
-			showNavbar.click();
+		if(!navbar.classList.contains('navbar-active')){
+			if(window.scrollY > lastScrollPos){
+				navMain.style.top = '-60px';
+			}else{
+				navMain.style.top = '0';
+			}
+			lastScrollPos = window.scrollY;
 		}
 	}
 	window.addEventListener('scroll', handleScroll);
