@@ -291,8 +291,7 @@ a{
 /*Sobre mi*/
 .sobremi{
 	background: var(--black-primary);
-	position: relative;	
-	min-height: 670px;
+	position: relative;
 	width: 100%;
 	z-index: 10;
 }
@@ -312,7 +311,7 @@ a{
 	display: flex;
 	align-items: center;
 	margin-left: 20px;
-	width: 50%
+	width: 50%;
 }
 
 .sobremi-avatar{
@@ -327,7 +326,7 @@ a{
 	width: 100%;
 	bottom: 0;
 	left: 0;
-
+	z-index: -1;
 }
 
 /*Contacto*/
@@ -339,7 +338,7 @@ a{
 	height: 850px; 
 }
 .contacto-title{
-	margin: 0 0 4rem 0;
+	margin: 2rem 0 4rem 0;
 }
 .formulario{
 	background: white;
@@ -516,6 +515,10 @@ a{
 	}
 	.sobremi-avatar{
 		margin: 0;
+	}
+
+	.contacto-title{
+		margin: 0 0 4rem 0;
 	}
 
 	.formulario{
