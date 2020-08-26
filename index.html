@@ -11,24 +11,24 @@
 <body>
 
 	<!--Barra de navegacion-->
-	<nav class="nav">
+	<nav class="nav" id="navMain">
 		<div class="navbar fadeIn">
 			<div class="navbar-brand">
 				<a href="#">
 					<img src="./assets/Logo.svg">
 				</a>
-				<button class="navbar-bars">
+				<button class="navbar-bars" id="showNavbar">
 					<i class="fas fa-bars"></i>
 				</button>
 				<!--burger-->					
 			</div>
-			<div class="navbar-collapse">
+			<div class="navbar-collapse" id="navbar">
 				<div class="navbar-left">					
 					<a href="#" class="navbar-link active">Inicio</a>
-					<a href="#" class="navbar-link visibleTablet">Servicios</a>
-					<a href="#" class="navbar-link">Proyectos</a>
-					<a href="#" class="navbar-link">Sobre mi</a>
-					<a href="#" class="navbar-link visibleTablet">Contacto</a>	
+					<a href="#servicios" class="navbar-link visibleTablet">Servicios</a>
+					<a href="#proyectos" class="navbar-link">Proyectos</a>
+					<a href="#sobremi" class="navbar-link">Sobre mi</a>
+					<a href="#contacto" class="navbar-link visibleTablet">Contacto</a>	
 				</div>
 				<div class="navbar-right">
 					<div class="navbar-redes">
@@ -42,7 +42,7 @@
 							<i class="fab fa-youtube"></i>
 						</a>
 					</div>			
-					<a href="#" class="btn-primary" id="btnContactar">
+					<a href="#contacto" class="btn-primary" id="btnContactar">
 						Contactar
 					</a>			
 				</div>
@@ -104,7 +104,7 @@
 	
 	<!--Proyectos-->
 	
-	<section class="proyectos">
+	<section class="proyectos" id="proyectos">
 		<div class="proyectos-header">
 			<h2>Proyectos</h2>
 		</div>
@@ -130,7 +130,7 @@
 		</div>
 		<a href="#" class="btn-primary btn-proyectos">Mas proyectos</a>
 	</section>
-	<section class="sobremi">
+	<section class="sobremi" id="sobremi">
 		<h2 class="sobremi-title">¿Quien soy?</h2>
 		<div class="container">
 			<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, numquam reprehenderit autem officia repellat, nisi eum dolore veniam excepturi! Ipsum, saepe dolores labore? Deleniti minima iure dolorum consequatur eius aperiam?.<br>
@@ -145,7 +145,7 @@
 		<img src="./assets/Vector1.svg" class="vector"></img>
 	</section>
 
-	<section class="contacto">
+	<section class="contacto" id="contacto">
 		<h2 class="contacto-title">¿Trabajamos juntos?</h2>
 		<form class="formulario">
 			<label for="nombre">Nombre:</label>
@@ -183,5 +183,10 @@
 			</div>
 		</div>
 	</footer>
+
+	<!--Wsp-->
+
+
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>

@@ -9,7 +9,9 @@ font-family: 'Roboto', sans-serif;
 	--primary-hover: #53B7FA;
 	--black-primary: #333333 ;
 
+	/*medidas de varios elementos*/
 	--altoNav: 60px;
+	--anchoNavCollapse: 60%;
 }
 *{
 
@@ -39,6 +41,7 @@ a{
 	position: fixed;
 	top: 0;
 	z-index: 1000;
+	transition: 0.4s;
 
 }
 .navbar{
@@ -431,6 +434,7 @@ a{
 		flex-direction: column;
 		align-items: flex-start;
 		position: relative;
+
 	}
 	.navbar-brand{
 		display: flex;
@@ -442,6 +446,7 @@ a{
 	.navbar-bars{
 		background: none;
 		border: none;
+		color: var(--black-primary);
 		font-size: 24px;
 		display: block;
 		transform: translateY(-15%);
@@ -451,11 +456,15 @@ a{
 		background: white;	
 		flex-direction: column;
 		padding-top: 20px;
-		width: 40%;
-		/*transform: translateX(calc(-100% - 20px));*/
+		width: 60%;
 		position: relative;
-		left: calc(-40% - 20px)
+		left: calc(-60% - 20px);
+		transition: 0.6s;
 	}
+	.navbar-active{
+		left: -20px;
+	}
+
 	.navbar-left{
 		flex-direction: column;
 	}
@@ -500,6 +509,13 @@ a{
 }
 
 @media screen and (max-width: 768px){
+	.navbar-collapse{
+		width: 90%;
+		left: calc(-90% - 20px);
+	}
+	.navbar-active{
+		left: -20px;
+	}
 	.sobremi-title{
 		margin: 0;
 		padding: 2rem 0 0 0;
@@ -539,8 +555,19 @@ a{
 @media screen and (max-width: 576px){
 	.header-content{
 		width: 90%;
+		height: 210px;
+	}
+
+	.sobremi-avatar{
+		width: 55%;
 	}
 	.formulario{
 		width: 90%;
+	}
+}
+
+@media screen and (max-width: 334px){
+	.header-content{
+		height: 230px;
 	}
 }
