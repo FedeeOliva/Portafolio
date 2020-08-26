@@ -292,7 +292,7 @@ a{
 .sobremi{
 	background: var(--black-primary);
 	position: relative;	
-	height: 670px;
+	min-height: 670px;
 	width: 100%;
 	z-index: 10;
 }
@@ -405,7 +405,7 @@ a{
 	
 }
 
-.redes a i{
+.redes a{
 	margin-left: 45px;
 	color: white;
 	font-size: 2.2em;
@@ -494,7 +494,40 @@ a{
 }
 
 @media screen and (max-width: 768px){
+	.sobremi-title{
+		margin: 0;
+		padding: 2rem 0 0 0;
+	}
+	.sobremi .container{
+		flex-direction: column-reverse;
+		align-items: center;
+		padding: 20px;
+	}
+	.sobremi .container p{
+		margin: 20px 0;
+		width: 100%
+	}
+	.sobremi-avatar{
+		margin: 0;
+	}
+
 	.formulario{
 		width: 70%;
+	}
+
+	.footer > .container{
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.redes > a:first-child{
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.formulario{
+		width: 90%;
 	}
 }
