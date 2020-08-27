@@ -30,16 +30,23 @@
 	window.addEventListener('scroll', handleScroll);
 })();
 
+/*Smooth Scroll*/
 (()=>{
-	  let buttons = document.querySelectorAll('a');
-	  buttons.forEach((button) => {
-	    button.addEventListener('click', (e) => {
-	      e.preventDefault();
-	      let target = e.currentTarget.getAttribute('href');
-	      
-	      document.querySelector(target).scrollIntoView({
-	        behavior: 'smooth'
-	      });
-	    });
-	  });
+	const smoothScroll = e => {
+		e.preventDefault();
+		let target = e.currentTarget.getAttribute('href');		      
+		document.querySelector(target).scrollIntoView({
+		  behavior: 'smooth'
+		});
+
+		if(navbar.classList.contains('navbar-active'))
+			showNavbar.click();
+
+	}
+	let buttons = document.querySelectorAll('a');	
+
+	buttons.forEach( button => {
+	    button.addEventListener('click', smoothScroll);
+	});
+
 })();
