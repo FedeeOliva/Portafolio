@@ -455,7 +455,7 @@ a{
 		align-items: center;
 		background: white;	
 		flex-direction: column;
-		padding-top: 20px;
+		padding-top: 20px;		
 		width: 60%;
 		position: relative;
 		left: calc(-60% - 20px);
@@ -511,10 +511,17 @@ a{
 @media screen and (max-width: 768px){
 	.navbar-collapse{
 		width: 90%;
-		left: calc(-90% - 20px);
+		min-height: 90vh;
+		max-height: 100vh;
+		left: calc(-90% - 20px);		
+		overflow: scroll;
 	}
 	.navbar-active{
 		left: -20px;
+	}
+
+	.navbar-redes{
+		padding-bottom: 20px;
 	}
 	.sobremi-title{
 		margin: 0;
