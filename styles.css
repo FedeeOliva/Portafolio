@@ -179,6 +179,7 @@ a{
 	line-height: 1.2em;
 	color: #FFFFFF;
 	margin: 0 0 0 5px;
+	text-align: center;
 }
 
 .header-content a{
@@ -573,7 +574,7 @@ a{
 	}
 }
 
-@media screen and (max-width: 334px){
+@media screen and (max-width: 360px){
 	.header-content{
 		height: 230px;
 	}
