@@ -69,6 +69,9 @@ a{
 .navbar-bars{
 	display: none;
 }
+.navbar-bars:focus{
+	outline: none;
+}
 
 .navbar-collapse{
 	display: flex;
@@ -389,7 +392,9 @@ a{
 	width: 80%;
 	max-width: 80%;
 }
-
+.formulario .input:focus, .formulario textarea:focus{
+	outline: none;
+}
 .formulario textarea{
 	height: 8.125em; /* 130/16 */
 }
@@ -605,7 +610,7 @@ a{
 		width: 55%;
 	}
 	.formulario{
-		font-size: 0.8rem;
+		font-size: 0.85rem;
 		width: 100%;
 	}
 }
