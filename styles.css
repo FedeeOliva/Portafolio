@@ -18,6 +18,8 @@ font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
 }
 
+/* Genenerico*/
+
 h2{
 	font-family: Raleway;
 	font-style: normal;
@@ -29,6 +31,12 @@ h2{
 }
 a{
 	text-decoration: none;
+}
+
+.container{	
+	width: 100%;
+	max-width: 1140px;
+	margin: auto;
 }
 
 /*Barra de navegacion*/
@@ -200,15 +208,12 @@ a{
 .servicios{
 	width: 100%;
 }
-
-.container{	
+.servicios > .container{
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
-	width: 100%;
-	max-width: 1024px;
-	margin: auto;
+	justify-content: space-around;
 }
+
 .card-service{
 	width: 290px;
 	margin: 0 20px;
@@ -234,6 +239,10 @@ a{
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+}
+.proyectos > .container{
+	display: flex;
+	justify-content: space-around;
 }
 
 .proyectos-header{
@@ -303,6 +312,10 @@ a{
 	padding: 2rem 0;
 }
 
+.sobremi > .container{
+	display: flex;
+	justify-content: space-around;
+}
 
 .sobremi p{
 	color: white;
@@ -392,6 +405,10 @@ a{
 	width: 100%;
 	padding: 0 20px;
 }
+.footer > .container{
+	display: flex;
+	justify-content: space-between;
+}
 
 .footer small{
 	color: white;
@@ -429,6 +446,10 @@ a{
 
 /*Tablet*/
 @media screen and (max-width: 992px) {
+
+	h2{
+		font-size: 2.1em;
+	}
 
 	/* Tablet navbar*/
 	.navbar{
@@ -491,14 +512,14 @@ a{
 		margin: 0;
 	}
 
-	/* servicios */
+	/* servicios 
 	.servicios > .container{
 		justify-content: space-around;
-	}
+	}*/
+
 	/* proyectos*/
 	.card-proyecto{
 		width: 80%;
-		margin: 20px auto;
 	}
 
 	/*sobre mi*/
@@ -510,6 +531,10 @@ a{
 }
 
 @media screen and (max-width: 768px){
+	.container{
+		max-width: 720px;
+	}
+
 	.navbar-collapse{
 		width: 90%;
 		min-height: 90vh;
@@ -524,6 +549,12 @@ a{
 	.navbar-redes{
 		padding-bottom: 20px;
 	}
+
+	.proyectos > .container{
+		align-items: center;
+		flex-direction: column;		
+	}
+
 	.sobremi-title{
 		margin: 0;
 		padding: 2rem 0 0 0;
@@ -561,6 +592,10 @@ a{
 }
 
 @media screen and (max-width: 576px){
+	.container{
+		max-width: 540px;
+	}
+
 	.header-content{
 		width: 90%;
 		height: 210px;
