@@ -160,47 +160,45 @@ a{
 }
 
 .header-content{
-	display: flex;
-	flex-direction: column;
-	padding: 10px 20px;
 	align-items: center;
-	width: 496px;
-	height: 10.5em;
 	background: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
 	border: 1px solid #349CE1;
 	box-sizing: border-box;
-	border-radius: 10px;
-	transform: translateX(-50%);
+	display: flex;
+	flex-direction: column;
 	margin-left: 20px;
+	padding: 10px 20px;
+	transform: translateX(-50%);
+	width: 496px;
 
 }
 
 .header-content h2{
-	font-family: Raleway;
-	font-weight: bold;
-	font-size: 1.7em;
-	line-height: 1.2em;
 	color: #FFFFFF;
+	font-family: Raleway;
+	font-size: 1.7em;
+	font-weight: bold;
+	line-height: 1.2em;
 	margin: 1rem 0 0.5rem 0;
 }
 
 .header-content p, .header-content span{
+	color: #FFFFFF;
 	font-family: Raleway;
 	font-size: 1.1em;
 	line-height: 1.2em;
-	color: #FFFFFF;
 	margin: 0 0 0 5px;
 	text-align: center;
 }
 
 .header-content a{
-	color: var(--primary);
 	/*font-family: Raleway;*/
-	text-decoration: none;
-	font-size: 1.3em;
-	position: absolute;
-	bottom: 15px;
+	color: var(--primary);
 	cursor: pointer;
+	font-size: 1.3em;
+	margin: 10px 0;
+	text-decoration: none;
 }
 
 .header-content a:hover{
@@ -355,22 +353,22 @@ a{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	height: 850px; 
 }
 .contacto-title{
 	margin: 2rem 0 4rem 0;
 }
 .formulario{
+	align-items: center;
 	background: white;
 	border-radius: 25px;
 	border: 3px solid var(--primary);
-	font-size: 1rem;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	width: 50%;
+	font-size: 1rem;
+	height: 40.625em /* 650/16 */	
 	max-width: 700px;
-	height: 40.625em /* 650/16 */
+	margin: 0 0 40px 0;
+	width: 50%;
 
 }
 
@@ -378,7 +376,7 @@ a{
 	color: var(--black-primary);
 	font-size: 1.25em;
 	font-family: Raleway;
-	margin: 30px 0 10px 0;
+	margin: 1.875em 0 0.625em 0; /* 30/16 */ /* 10/16 */
 }
 
 .formulario .input, .formulario textarea {
@@ -612,11 +610,5 @@ a{
 	.formulario{
 		font-size: 0.85rem;
 		width: 100%;
-	}
-}
-
-@media screen and (max-width: 360px){
-	.header-content{
-		height: 230px;
 	}
 }
