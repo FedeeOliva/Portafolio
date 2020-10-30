@@ -1,3 +1,4 @@
+"use strict";
 /*mostrar barra de navegacion*/
 (()=>{
 	const icono = showNavbar.getElementsByClassName('fas')[0];
@@ -43,10 +44,50 @@
 			showNavbar.click();
 
 	}
-	let buttons = document.querySelectorAll('a');	
+	let buttons = document.querySelectorAll('.navbar-link');	
 
 	buttons.forEach( button => {
 	    button.addEventListener('click', smoothScroll);
 	});
+	saberMas.addEventListener('click', smoothScroll);
 
+})();
+
+/*Formulario*/
+(() =>{
+	email.addEventListener('invalid', () => {
+		console.log('mail invalido')
+		email.setCustomValidity("Ingrese una correo válido");
+	});
+	mensaje.addEventListener('invalid', () => {
+		mensaje.setCustomValidity("Este campo no puede estar vacio");
+	});
+
+	const handleValid = e =>{
+		e.target.setCustomValidity("");
+	}
+
+	const handleSubmit = e => {
+		e.preventDefault();
+
+		const data = {
+			nombre: e.target[0].value,
+			apellido: e.target[1].value,
+			email: e.target[2].value,
+			mensaje: e.target[3].value,
+		}
+		console.log(JSON.stringify(data));
+
+		fetch('http://localhost:4000/email', {
+			method: 'POST',
+			body: JSON.stringify(data),
+			headers: {
+      			'Content-Type': 'application/json'    		  
+    		},
+		})
+		.then( response => console.log(response));
+	}
+
+	formulario.addEventListener('submit', handleSubmit);	
+	formulario.addEventListener('input', handleValid);
 })();

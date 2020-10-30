@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<title>Federico Oliva | Desarrollo web</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="utf-8"/>
+	<meta name="description" content="Portafolio Federico Oliva Desarrollo Web" />
+	<meta name="keywords" content="portafolio, desarrollo, web, frontend, federico, oliva"/>
+	<meta name="robots" content="index"/>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
@@ -26,17 +30,17 @@
 			<div class="navbar-collapse" id="navbar">
 				<div class="navbar-left">					
 					<a href="#header" class="navbar-link active">Inicio</a>
-					<a href="#servicios" class="navbar-link visibleTablet">Servicios</a>
+					<a href="#servicios" class="navbar-link visibleTablet">Conocimientos</a>
 					<a href="#proyectos" class="navbar-link">Proyectos</a>
 					<a href="#sobremi" class="navbar-link">Sobre mi</a>
 					<a href="#contacto" class="navbar-link visibleTablet">Contacto</a>	
 				</div>
 				<div class="navbar-right">
 					<div class="navbar-redes">
-						<a href="#">
+						<a href="https://www.linkedin.com/in/fedeoliva/" target="_blank">
 							<i class="fab fa-linkedin"></i>
 						</a>
-						<a href="#">
+						<a href="https://github.com/FedeeOliva" target="_blank">
 							<i class="fab fa-github-square"></i>
 						</a>
 					</div>			
@@ -49,128 +53,135 @@
 	</nav>	
 
 	<!--Encabezado-->
+	<main>
+		<header class="header" id="header">
+			<div class="header-bg">			
+			</div>
+			<div class="header-content">
+				<h2>¡Hola a todos!</h2>
+				<p>   Mi nombre es Federico Oliva. Soy estudiante de Tecnicatura en Programación y Desarrolador web </p>
 
-	<header class="header" id="header">
-		<div class="header-bg">			
-		</div>
-		<div class="header-content">
-			<h2>!Hola a todos!</h2>
-			<p>   Mi nombre es Federico Oliva. Soy estudiante de Tecnicatura en Programación y Desarrolador web </p>
+				<a href="#servicios" id="saberMas">Saber mas</a>
+			</div>
+		</header>
 
-			<a href="#servicios">Saber mas</a>
-		</div>
-	</header>
+		<!--Mis conocimientos-->
+		<section class="servicios" id="servicios">
+			<h2 class="title-service">Mis conocimientos</h2>
+			<div class="container  fadeIn">
+				<article class="card-service">
+					<i class="fab fa-js-square"></i>
+					<h3>JavaScript</h3>
+					<p>Manejo de DOM, POO, conocimiento de las incorporaciones de   ECMAScript6, consumo de API's con Fetch y Axios, me siento muy cómodo con este lenguaje de programación </p>
+				</article>
+				<article class="card-service">
+					<i class="fas fa-code"></i>
+					<h3>HTML</h3>
+					<p>Creacion de estructuras web semántica</p>
+				</article>
+				<article class="card-service">
+					<i class="fab fa-css3-alt"></i>
+					<h3>CSS3</h3>
+					<p>Diseños responsives, Flexbox, CSS Grid, Bootstrap, 
+					Styled Components en ReactJS y conocimientos basicos en SASS</p>
+				</article>
+				<article class="card-service">
+					<i class="fab fa-node"></i>
+					<h3>NodeJS</h3>
+					<p>Mi gusto por JavaScript me ha llevado a seguir con este lenguaje en el backend y creacion de API's con el framework de Express, enrutamiento, validacion de datos, autenticacion via JWT </p>
+				</article>
+				<article class="card-service">
+					<i class="fas fa-database"></i>
+					<h3>MongoDB</h3>
+					<p>Conomientos en MongoDB en conjuntos con Mongoose </p>
+				</article>
+				<article class="card-service">
+					<i class="fab fa-react"></i>
+					<h3>ReactJS</h3>
+					<p>Uso esta libreria con los Hooks, tengo buen dominio sobre lo basico de la libreria y en aprendizaje de nuevas tecnologias como Redux, GastbyJS y NextJS en Udemy </p>
+				</article>
 
-	<!--Servicios-->
-	<section class="servicios" id="servicios">
-		<h2 class="title-service">Mis conocimientos</h2>
-		<div class="container  fadeIn">
-			<article class="card-service">
-				<i class="fas fa-code"></i>
-				<h3>HTML</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at, nostrum autem tenetur ut quas consequuntur neque ipsam unde nobis esse cumque quam omnis possimus!</p>
-			</article>
-			<article class="card-service">
-				<i class="fab fa-css3-alt"></i>
-				<h3>CSS3</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at, nostrum autem tenetur ut quas consequuntur neque ipsam unde nobis esse cumque quam omnis possimus!</p>
-			</article>
-			<article class="card-service">
-				<i class="fab fa-js-square"></i>
-				<h3>JavaScript</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at, nostrum autem tenetur ut quas consequuntur neque ipsam unde nobis esse cumque quam omnis possimus!</p>
-			</article>
-			<article class="card-service">
-				<i class="fab fa-react"></i>
-				<h3>ReactJS</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at, nostrum autem tenetur ut quas consequuntur neque ipsam unde nobis esse cumque quam omnis possimus!</p>
-			</article>
-			<article class="card-service">
-				<i class="fab fa-node"></i>
-				<h3>NodeJS</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at, nostrum autem tenetur ut quas consequuntur neque ipsam unde nobis esse cumque quam omnis possimus!</p>
-			</article>
-			<article class="card-service">
-				<i class="fas fa-database"></i>
-				<h3>MongoDB</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at, nostrum autem tenetur ut quas consequuntur neque ipsam unde nobis esse cumque quam omnis possimus!</p>
-			</article>
-
-		</div>
-	</section>
-	
-	<!--Proyectos-->
-	
-	<section class="proyectos" id="proyectos">
-		<div class="proyectos-header">
-			<h2>Proyectos</h2>
-		</div>
-		<div class="container">
-			<article class="card-proyecto">
-				<img src="./assets/page1.JPG">
-				<div class="card-proyecto_hover">
-					<a href="#">Ver mas</a>
-				</div>
-			</article>
-			<article class="card-proyecto">
-				<img src="./assets/page2.JPG">
-				<div class="card-proyecto_hover">
-					<a href="#">Ver mas</a>
-				</div>
-			</article>
-			<article class="card-proyecto">
-				<img src="./assets/page3.JPG">
-				<div class="card-proyecto_hover">
-					<a href="#">Ver mas</a>
-				</div>
-			</article>
-		</div>
-		<a href="#" class="btn-primary btn-proyectos">Mas proyectos</a>
-	</section>
-	<section class="sobremi" id="sobremi">
-		<h2 class="sobremi-title">¿Quien soy?</h2>
-		<div class="container">
-			<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, numquam reprehenderit autem officia repellat, nisi eum dolore veniam excepturi! Ipsum, saepe dolores labore? Deleniti minima iure dolorum consequatur eius aperiam?.<br>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, officiis ut consectetur sequi est assumenda quas porro voluptatibus sit fugit!<br>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, officiis ut consectetur sequi est assumenda quas porro voluptatibus
-			</p>
-			<img src="./assets/avatar.jpg" class="sobremi-avatar">
-		</div>
+			</div>
+		</section>
 		
+		<!--Proyectos-->
 		
-		
-		<img src="./assets/Vector1.svg" class="vector"></img>
-	</section>
+		<section class="proyectos" id="proyectos">
 
-	<section class="contacto" id="contacto">
-		<h2 class="contacto-title">¿Trabajamos juntos?</h2>
-		<form class="formulario">
-			<label for="nombre">Nombre:</label>
-			<input type="text" name="nombre" id="nombre" placeholder="Ingresa tu Nombre..." class="input">
+			<div class="proyectos-header">
+				<h2>Proyectos</h2>
+			</div>
+			<div class="container">
+				<div class="seccion-en-preparacion">
+					<h2>Seccion en preparación :)</h2>
+				</div>
+				<article class="card-proyecto">
+					<img src="./assets/page1.JPG" alt="proyecto 1">
+					<div class="card-proyecto_hover">
+						<a href="#">Ver mas</a>
+					</div>
+				</article>
+				<article class="card-proyecto">
+					<img src="./assets/page2.JPG" alt="proyecto 2">
+					<div class="card-proyecto_hover">
+						<a href="#">Ver mas</a>
+					</div>
+				</article>
+				<article class="card-proyecto">
+					<img src="./assets/page3.JPG" alt="proyecto 3">
+					<div class="card-proyecto_hover">
+						<a href="#">Ver mas</a>
+					</div>
+				</article>
+			</div>
+			<a href="#proyectos" class="btn-primary btn-proyectos">Mas proyectos</a>
+		</section>
+		<section class="sobremi" id="sobremi">
+			<h2 class="sobremi-title">¿Quien soy?</h2>
+			<div class="container">
+				<p>&nbsp;&nbsp;&nbsp;Mi nombre es Federico Oliva, soy estudiante en la Universidad Tecnologica Nacional, tengo 24 años y soy de La Rioja, Argentina.<br>
+				&nbsp;&nbsp;&nbsp;Hace un año que decidí que queria dedicarme a la programación, es algo que me apasiona y me esfuerzo en mejorar cada día.<br>
+				&nbsp;&nbsp;&nbsp;Di mis primeros pasos en la programación con C y Java donde aprendí POO, luego empecé a meterme en el mundo del desarrollo web que me cautivó y decidí meterme de lleno al ecosistema de javascript apuntando al MERN Stack.<br>
+				&nbsp;&nbsp;&nbsp;Actualmente solo me dedico al estudio pero espero pronto empezar a poner en prática mis conocimientos en el ámbito laboral y poder mejorar como profesional.
+				</p>
+				<img src="./assets/avatar.jpg" alt="Federico Oliva" class="sobremi-avatar">
+			</div>
+			
+			
+			
+			<img src="./assets/Vector1.svg" class="vector"/>
+		</section>
 
-			<label for="apellido">Apellido:</label>
-			<input type="text" name="apellido" id="apellido"  placeholder="Ingresa tu Apellido..." class="input">
+		<section class="contacto" id="contacto">
+			<h2 class="contacto-title">¿Trabajamos juntos?</h2>
+			<form class="formulario" id="formulario">
+				<label for="nombre">Nombre:</label>
+				<input type="text" name="nombre" id="nombre" placeholder="Ingresa tu Nombre..." class="input" >
 
-			<label for="email">Email:</label>
-			<input type="email" name="email" id="email"
-			 placeholder="Ingresa tu Email..." class="input">
+				<label for="apellido">Apellido:</label>
+				<input type="text" name="apellido" id="apellido"  placeholder="Ingresa tu Apellido..." class="input">
 
-			<label for="mensaje">Mensaje:</label>
-			<textarea id="mensaje"></textarea>
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email"
+				 placeholder="Ingresa tu Email..." class="input" required>
 
-			<input type="submit" class="btn-primary submit" name="enviar" value="Enviar">
+				<label for="mensaje">Mensaje:</label>
+				<textarea id="mensaje" required></textarea>
 
-		</form>
-	</section>
+				<input type="submit" class="btn-primary submit" name="enviar" value="Enviar">
+
+			</form>
+		</section>
+	</main>
 	<footer class="footer">
 		<div class="container">
 			<small>© Copyright 2020 | Federico Oliva - Desarrolador Web Freelance.</small>
 			<div class="redes">
-				<a href="#">					
+				<a href="https://www.linkedin.com/in/fedeoliva/" target="_blank">					
 				<i class="fab fa-linkedin"></i>
 				</a>
 
-				<a href="#">					
+				<a href="https://github.com/FedeeOliva" target="_blank">					
 				<i class="fab fa-github-square"></i>
 				</a>
 			</div>
@@ -180,6 +191,6 @@
 	<!--Wsp-->
 
 
-	<script type="text/javascript" src="app.js"></script>
+	<script src="app.js"></script>
 </body>
 </html>
