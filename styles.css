@@ -459,10 +459,6 @@ a{
 	display: inline-block;
 }
 
-.iconos{
-	color: red;
-	font-size: 30px;
-}
 
 .seccion-en-preparacion{
 	background: rgba(3,3,3,0.8);
@@ -565,7 +561,9 @@ a{
 	.card-proyecto{
 		width: 80%;
 	}
-	
+	.fadeIn{
+		animation-name: none;
+	}
 
 }
 
