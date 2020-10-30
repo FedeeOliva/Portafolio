@@ -10,7 +10,30 @@
 	box-sizing: border-box;
 }
 
-/* Genenerico*/
+/* Genenerico, fuentes*/
+@font-face {
+  font-family: "Raleway" ;
+  src: url(./assets/fonts/Raleway-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Raleway" ;
+  src: url(./assets/fonts/Raleway-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Raleway" ;
+  src: url(./assets/fonts/Raleway-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto" ;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+
 
 h2{
 	font-family: Raleway;
@@ -282,11 +305,11 @@ a{
 
 .card-proyecto_hover a{
 	background: var(--primary);
-	color: white;
-	font-size: 1.250em;
-	font-family: Roboto;
-	padding: 10px 20px;
 	border-radius: 10px;
+	color: white;
+	font-family: Roboto;
+	font-size: 1.250em;
+	padding: 10px 20px;
 }
 
 .card-proyecto:hover .card-proyecto_hover{
@@ -374,14 +397,14 @@ a{
 
 .formulario .input, .formulario textarea {
 	background: #FFFFFF;
-	border: 2px solid #349CE1;
 	border-radius: 25px;
-	font-size: 1.125em;
+	border: 2px solid #349CE1;
 	font-family: Roboto;
-	text-align: center;
+	font-size: 1.125em;
 	height: 3.4375em; /* 55/16 */
-	width: 80%;
 	max-width: 80%;
+	text-align: center;
+	width: 80%;
 }
 
 .formulario .input:active, .formulario textarea:active{
