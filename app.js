@@ -78,7 +78,7 @@
 		}
 		console.log(JSON.stringify(data));
 
-		fetch('http://localhost:4000/email', {
+		fetch('https://portfoliofedeoliva.herokuapp.com/email', {
 			method: 'POST',
 			body: JSON.stringify(data),
 			headers: {
