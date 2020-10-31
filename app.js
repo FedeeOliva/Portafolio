@@ -77,15 +77,16 @@
 			mensaje: e.target[3].value,
 		}
 
-		fetch('https://portfoliofedeoliva.herokuapp.com/email', {
+		fetch('http://localhost:4000/email', {
 			method: 'POST',
 			body: JSON.stringify(data),
-			mode: 'cors',
+			credentials: 'include',
 			headers: {
       			'Content-Type': 'application/json',
     		},
 		})
-		.then( response => console.log(response))
+		.then( response => response.json())
+		.then (res => console.log(res))
 		.catch( error => console.log(error));
 	}
 
