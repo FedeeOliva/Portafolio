@@ -80,7 +80,6 @@
 		fetch('https://portfoliofedeoliva.herokuapp.com/email', {
 			method: 'POST',
 			body: JSON.stringify(data),
-			credentials: 'include',
 			headers: {
       			'Content-Type': 'application/json',
     		},
