@@ -76,16 +76,17 @@
 			email: e.target[2].value,
 			mensaje: e.target[3].value,
 		}
-		console.log(JSON.stringify(data));
 
 		fetch('https://portfoliofedeoliva.herokuapp.com/email', {
 			method: 'POST',
 			body: JSON.stringify(data),
+			mode: 'cors',
 			headers: {
       			'Content-Type': 'application/json'    		  
     		},
 		})
 		.then( response => console.log(response));
+		.catch( error => console.log(error));
 	}
 
 	formulario.addEventListener('submit', handleSubmit);	
