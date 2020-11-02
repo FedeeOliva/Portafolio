@@ -347,15 +347,17 @@ a{
 	display: -o-flex;
 	display: flex;
 	align-items: center;
-	margin-left: 20px;
-	width: 50%;
+	border-left: 1px solid white;
+	padding-left: 50px;
+	padding-right: 20px;
+	width: 50%;	
 }
 
 .sobremi-avatar{
 	border-radius: 10px;
 	height: 400px;
 	width: auto;
-	margin-right: 20px;
+	margin: 0 auto;
 	z-index: 10;
 }
 
@@ -597,11 +599,13 @@ a{
 		padding: 2rem 0 0 0;
 	}
 	.sobremi .container{
-		flex-direction: column-reverse;
+		flex-direction: column;
 		align-items: center;
 		padding: 20px;
 	}
 	.sobremi .container p{
+		border: none;
+		padding: 0;		
 		margin: 20px 0;
 		width: 100%
 	}

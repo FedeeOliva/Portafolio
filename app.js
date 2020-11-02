@@ -56,7 +56,6 @@
 /*Formulario*/
 (() =>{
 	email.addEventListener('invalid', () => {
-		console.log('mail invalido')
 		email.setCustomValidity("Ingrese una correo válido");
 	});
 	mensaje.addEventListener('invalid', () => {
@@ -69,7 +68,6 @@
 
 	const handleSubmit = e => {
 		e.preventDefault();
-
 		const data = {
 			nombre: e.target[0].value,
 			apellido: e.target[1].value,
@@ -84,9 +82,15 @@
       			'Content-Type': 'application/json',
     		},
 		})
-		.then( response => response.json())
-		.then (res => console.log(res))
-		.catch( error => console.log(error));
+		.then( response => {
+			swal("Email enviado correctamente", 
+			"Me contactaré contigo pronto", "success")
+		})
+		.catch( error => {
+			swal("Error en el envío", 
+			"Algo ha fallado :(", "error")
+		});
+		e.target.reset();
 	}
 
 	formulario.addEventListener('submit', handleSubmit);	
