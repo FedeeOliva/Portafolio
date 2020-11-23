@@ -9,8 +9,8 @@
 	<meta name="robots" content="index"/>
 	<meta property="og:image" content="./assets/pagina.jpg"/>
 	<meta property="og:title" content="Federico Oliva | Desarrollador web"/>
-	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/styles.css">
 	
 </head>
 <body>
@@ -37,10 +37,14 @@
 				</div>
 				<div class="navbar-right">
 					<div class="navbar-redes">
-						<a href="https://www.linkedin.com/in/fedeoliva/" target="_blank">
+						<a href="https://www.linkedin.com/in/fedeoliva/" target="_blank"
+						rel="noopener noreferrer"
+						>
 							<i class="fab fa-linkedin"></i>
 						</a>
-						<a href="https://github.com/FedeeOliva" target="_blank">
+						<a href="https://github.com/FedeeOliva" target="_blank"
+						rel="noopener noreferrer"
+						>
 							<i class="fab fa-github-square"></i>
 						</a>
 					</div>			
@@ -112,16 +116,24 @@
 				<h2>Proyectos</h2>
 			</div>
 			<div class="container">
-				<div class="seccion-en-preparacion">
-					<h2>Seccion en preparación :)</h2>
-				</div>
 				<article class="card-proyecto">
-					<img data-src="./assets/page1.JPG" alt="proyecto 1" class="lazyload">
+					<img data-src="./assets/tutubopage.png" alt="proyecto 1" class="lazyload">
 					<div class="card-proyecto_hover">
-						<a href="#">Ver mas</a>
+						<a href="https://github.com/FedeeOliva/tutubo"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Ver mas</a>
 					</div>
 				</article>
-				<article class="card-proyecto">
+
+				<article class="card-proximamente">
+					Proximamente
+				</article>
+				<article class="card-proximamente">
+					Proximamente
+				</article>
+
+				<!--article class="card-proyecto">
 					<img data-src="./assets/page2.JPG" alt="proyecto 2" class="lazyload">
 					<div class="card-proyecto_hover">
 						<a href="#">Ver mas</a>
@@ -132,7 +144,7 @@
 					<div class="card-proyecto_hover">
 						<a href="#">Ver mas</a>
 					</div>
-				</article>
+				</article-->
 			</div>
 			<a href="#proyectos" class="btn-primary btn-proyectos">Mas proyectos</a>
 		</section>
@@ -177,11 +189,15 @@
 		<div class="container">
 			<small>© Copyright 2020 | Federico Oliva - Desarrolador Web Freelance.</small>
 			<div class="redes">
-				<a href="https://www.linkedin.com/in/fedeoliva/" target="_blank">					
+				<a href="https://www.linkedin.com/in/fedeoliva/" target="_blank"
+				rel="noopener noreferrer"
+				>					
 				<i class="fab fa-linkedin"></i>
 				</a>
 
-				<a href="https://github.com/FedeeOliva" target="_blank">					
+				<a href="https://github.com/FedeeOliva" target="_blank"
+				rel="noopener noreferrer"
+				>					
 				<i class="fab fa-github-square"></i>
 				</a>
 			</div>
@@ -189,9 +205,9 @@
 	</footer>
 
 	<!--scripts-->
-	<script src="lazysizes.min.js" async></script>
+	<script src="js/lazysizes.min.js" async></script>
 	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest" defer></script>
-	<script src="app.js"></script>
+	<script src="js/app.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
 </body>
 </html>

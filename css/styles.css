@@ -5,6 +5,9 @@
 	--altoNav: 60px;
 	--anchoNavCollapse: 60%;
 }
+html {
+  scroll-behavior: smooth;
+}
 *{
 
 	box-sizing: border-box;
@@ -13,27 +16,27 @@
 /* Genenerico, fuentes*/
 @font-face {
   font-family: "Raleway" ;
-  src: url(./assets/fonts/Raleway-ExtraBold.ttf);
+  src: url(../assets/fonts/Raleway-ExtraBold.ttf);
   font-weight: 800;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Raleway" ;
-  src: url(./assets/fonts/Raleway-Bold.ttf);
+  src: url(../assets/fonts/Raleway-Bold.ttf);
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway" ;
-  src: url(./assets/fonts/Raleway-Regular.ttf);
+  src: url(../assets/fonts/Raleway-Regular.ttf);
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto" ;
-  src: url(./assets/fonts/Roboto-Regular.ttf);
+  src: url(../assets/fonts/Roboto-Regular.ttf);
   font-weight: 400;
   font-display: swap;
 }
@@ -156,7 +159,7 @@ a{
 
 /*Header Encabezado*/
 .header{
-	background: url(assets/img-header.jpg);
+	background: url(../assets/img-header.jpg);
 	/*background-attachment: fixed;*/
 	background-position: center;
 	background-size: cover;
@@ -320,6 +323,17 @@ a{
 	opacity: 1;
 }
 
+.card-proximamente{
+	width: 294px;
+	margin: 2rem 20px;
+	border: 4px dashed grey;
+	color: grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
 
 /*Sobre mi*/
 .sobremi{
@@ -462,18 +476,6 @@ a{
 }
 
 
-.seccion-en-preparacion{
-	background: rgba(3,3,3,0.8);
-	height: 100%;
-	font-size: 0.7rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	width: 100%;
-	z-index: 100;
-}
-
 
 /*animaciones*/
 @keyframes fadeIn{
@@ -560,9 +562,10 @@ a{
 	}*/
 
 	/* proyectos*/
-	.card-proyecto{
+	.card-proyecto , .card-proximamente{
 		width: 80%;
 	}
+
 	.fadeIn{
 		animation-name: none;
 	}
@@ -630,6 +633,9 @@ a{
 
 	.redes > a:first-child{
 		margin: 0;
+	}
+	.card-proximamente{
+		display: none;
 	}
 }
 
