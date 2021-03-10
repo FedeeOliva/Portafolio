@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Federico Oliva | Desarrollo web</title>
+	<title>Federico Oliva | Frontend Developer</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta charset="utf-8"/>
 	<meta name="description" content="Portafolio Federico Oliva Desarrollador Web" />
@@ -17,7 +17,7 @@
 
 	<!--Barra de navegacion-->
 	<nav class="nav" id="navMain">
-		<div class="navbar fadeIn">
+		<div class="navbar">
 			<div class="navbar-brand">
 				<a href="#header">
 					<img src="./assets/Logo.svg" alt="Federico Oliva - Desarrollador Web">
@@ -30,7 +30,7 @@
 			<div class="navbar-collapse" id="navbar">
 				<div class="navbar-left">					
 					<a href="#header" class="navbar-link active">Inicio</a>
-					<a href="#servicios" class="navbar-link visibleTablet">Conocimientos</a>
+					<a href="#servicios" class="navbar-link">Tecnologías</a>
 					<a href="#proyectos" class="navbar-link">Proyectos</a>
 					<a href="#sobremi" class="navbar-link">Sobre mi</a>
 					<a href="#contacto" class="navbar-link visibleTablet">Contacto</a>	
@@ -62,47 +62,45 @@
 			<div class="header-bg">			
 			</div>
 			<div class="header-content">
-				<h2>¡Hola a todos!</h2>
-				<p>   Mi nombre es Federico Oliva. Soy estudiante de Tecnicatura en Programación y Desarrollador web </p>
-
-				<a href="#servicios" id="saberMas">Saber mas</a>
+				<h2 class="slideFromRight">Federico Oliva</h2>
+				<h3 class="slideFromLeft">Frontend Developer</h3>				
 			</div>
 		</header>
+	
 
 		<!--Mis conocimientos-->
 		<section class="servicios" id="servicios">
-			<h2 class="title-service">Mis conocimientos</h2>
+			<h2 class="title-service">Tecnologías</h2>
 			<div class="container  fadeIn">
 				<article class="card-service">
 					<i class="fab fa-js-square"></i>
-					<h3>JavaScript</h3>
-					<p>Manejo de DOM, POO, conocimiento de las incorporaciones de   ECMAScript6, consumo de API's con Fetch y Axios, me siento muy cómodo con este lenguaje de programación </p>
+					<h4>JavaScript</h4>
+					<p> </p>
 				</article>
 				<article class="card-service">
 					<i class="fab fa-html5"></i>
-					<h3>HTML</h3>
-					<p>Creacion de estructuras web semántica</p>
+					<h4>HTML</h4>
+					<p></p>
 				</article>
 				<article class="card-service">
 					<i class="fab fa-css3-alt"></i>
-					<h3>CSS3</h3>
-					<p>Diseños responsives, Flexbox, CSS Grid, Bootstrap, 
-					Styled Components en ReactJS y conocimientos basicos en SASS</p>
+					<h4>CSS3</h4>
+					<p></p>
 				</article>
 				<article class="card-service">
 					<i class="fab fa-node"></i>
-					<h3>NodeJS</h3>
-					<p>Mi gusto por JavaScript me ha llevado a seguir con este lenguaje en el backend y creacion de API's con el framework de Express, enrutamiento, validacion de datos, autenticacion via JWT </p>
-				</article>
-				<article class="card-service">
-					<i class="fas fa-database"></i>
-					<h3>MongoDB</h3>
-					<p>Conomientos en MongoDB en conjuntos con Mongoose </p>
+					<h4>NodeJS - Express</h4>
+					<p></p>
 				</article>
 				<article class="card-service">
 					<i class="fab fa-react"></i>
-					<h3>ReactJS</h3>
-					<p>Uso esta libreria con los Hooks, tengo buen dominio sobre lo basico de la libreria y en aprendizaje de nuevas tecnologias como Redux, GastbyJS y NextJS en Udemy </p>
+					<h4>ReactJS</h4>
+					<p></p>
+				</article>
+				<article class="card-service">
+					<i class="fas fa-database"></i>
+					<h4>MongoDB</h4>
+					<p></p>
 				</article>
 
 			</div>
@@ -118,21 +116,29 @@
 			<div class="container">
 				<article class="card-proyecto">
 					<img data-src="./assets/tutubopage.png" alt="proyecto 1" class="lazyload">
-					<div class="card-proyecto_hover">
-						<a href="https://github.com/FedeeOliva/tutubo"
-						target="_blank"
-						rel="noopener noreferrer"
-						>Ver mas</a>
+					<div class="card-proyecto-content">
+						<h5>TuTubo</h5>
+						<p>Aplicación web consumiendo API de Youtube</br>
+							Creada con ReactJS
+						</p>
+						<div class="card-proyecto-link">
+							<a href="https://tutubo.netlify.app/">Demo</a>
+							<a href="https://github.com/FedeeOliva/tutubo">Código</a>							
+						</div>
 					</div>
 				</article>
 
 				<article class="card-proyecto">
 					<img data-src="./assets/trelloclon.png" alt="proyecto 1" class="lazyload">
-					<div class="card-proyecto_hover">
-						<a href="https://github.com/FedeeOliva/OrganizeClient"
-						target="_blank"
-						rel="noopener noreferrer"
-						>Ver mas</a>
+					<div class="card-proyecto-content">
+						<h5>Organize</h5>
+						<p>Aplicación web con funcionalidades básicas de trello.</br>
+							Creada con el de Stack de MERN.
+						</p>
+						<div class="card-proyecto-link">
+							<a href="https://organizetasks.netlify.app/">Demo</a>
+							<a href="https://github.com/FedeeOliva/OrganizeClient">Código</a>							
+						</div>
 					</div>
 				</article>
 
@@ -153,15 +159,14 @@
 					</div>
 				</article-->
 			</div>
-			<a href="#proyectos" class="btn-primary btn-proyectos">Mas proyectos</a>
 		</section>
 		<section class="sobremi" id="sobremi">
 			<h2 class="sobremi-title">¿Quien soy?</h2>
 			<div class="container">
 				<img data-src="./assets/avatar.jpg" alt="Federico Oliva" class="sobremi-avatar lazyload">
-				<p>&nbsp;&nbsp;&nbsp;Mi nombre es Federico Oliva, soy estudiante en la Universidad Tecnológica Nacional, tengo 24 años y soy de La Rioja, Argentina.<br>
-				&nbsp;&nbsp;&nbsp;Hace un año que decidí que queria dedicarme a la programación, es algo que me apasiona y me esfuerzo en mejorar cada día.<br>
-				&nbsp;&nbsp;&nbsp;Di mis primeros pasos en la programación con C y Java donde aprendí POO, luego empecé a meterme en el mundo del desarrollo web que me cautivó y decidí meterme de lleno al ecosistema de JavaScript apuntando al MERN Stack.<br>
+				<p>&nbsp;&nbsp;&nbsp;Mi nombre es <b>Federico Oliva</b>, soy estudiante de <b>Tecnicatura en Programación</b> en la <b>Universidad Tecnológica Nacional</b>, tengo 24 años y soy de La Rioja, Argentina.<br>
+				&nbsp;&nbsp;&nbsp;A principios de 2020 decidí dedicarme a la programación, es algo que me apasiona y me esfuerzo en mejorar cada día.<br>
+				&nbsp;&nbsp;&nbsp;Di mis primeros pasos en la programación con C y Java donde aprendí POO, luego empecé a meterme en el mundo del desarrollo web que me cautivó y decidí meterme de lleno al ecosistema de JavaScript apuntando al <b>MERN Stack</b>.<br>
 				&nbsp;&nbsp;&nbsp;Actualmente solo me dedico al estudio pero espero pronto empezar a poner en práctica mis conocimientos en el ámbito laboral y poder mejorar como profesional.
 				</p>
 			</div>
@@ -194,7 +199,9 @@
 	</main>
 	<footer class="footer">
 		<div class="container">
-			<small>© Copyright 2020 | Federico Oliva - Desarrolador Web Freelance.</small>
+			<small>
+			 	Federico Oliva - Desarrolador Web Freelance.
+			</small>
 			<div class="redes">
 				<a href="https://www.linkedin.com/in/fedeoliva/" target="_blank"
 				rel="noopener noreferrer"

@@ -41,8 +41,16 @@ html {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Roboto" ;
+  src: url(../assets/fonts/Roboto-Bold.ttf);
+  font-weight: 700;
+  font-display: swap;
+}
 
-h2{
+
+
+h2,h3{
 	font-family: Raleway;
 	font-style: normal;
 	font-weight: 800;
@@ -68,7 +76,7 @@ a{
 	justify-content: center;
 	height: var(--altoNav);
 	width: 100%;
-	position: fixed;
+	position: sticky;
 	top: 0;
 	z-index: 1000;
 	transition: 0.4s;
@@ -90,6 +98,7 @@ a{
 }
 .navbar-bars{
 	display: none;
+	cursor: pointer;
 }
 .navbar-bars:active{
 	outline: none;
@@ -163,11 +172,9 @@ a{
 	/*background-attachment: fixed;*/
 	background-position: center;
 	background-size: cover;
-	margin-top: var(--altoNav);
-	height: 533px;
+	height: calc(100vh - var(--altoNav));
 	width: 100%;
 	position: relative;
-
 	display:flex;
 	justify-content: center;
 	align-items: center;
@@ -182,49 +189,23 @@ a{
 }
 
 .header-content{
-	align-items: center;
-	background: rgba(0, 0, 0, 0.5);
-	border-radius: 10px;
-	border: 1px solid #349CE1;
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	margin-left: 20px;
-	padding: 10px 20px;
-	transform: translateX(-50%);
-	width: 496px;
-
+	font-size: 1.1rem;
+	position: relative;
+	z-index: 9;
 }
 
 .header-content h2{
-	color: #FFFFFF;
-	font-family: Raleway;
-	font-size: 1.7em;
-	font-weight: bold;
-	line-height: 1.2em;
-	margin: 1rem 0 0.5rem 0;
-}
-
-.header-content p, .header-content span{
-	color: #FFFFFF;
-	font-family: Raleway;
-	font-size: 1.1em;
-	line-height: 1.2em;
-	margin: 0 0 0 5px;
-	text-align: center;
-}
-
-.header-content a{
-	/*font-family: Raleway;*/
+	font-size: 6em;
+	margin: 0;
+	text-shadow: 1px 1px 2px #333;
 	color: var(--primary);
-	cursor: pointer;
-	font-size: 1.3em;
-	margin: 10px 0;
-	text-decoration: none;
 }
 
-.header-content a:hover{
-	color: var(--primary-hover);
+.header-content h3{
+	font-size: 5em;
+	
+	margin: 0;
+	text-shadow: 1px 1px 2px black;
 }
 
 /* SERVICIOS*/
@@ -242,6 +223,24 @@ a{
 	margin: 20px;
 	font-family: Raleway;
 	text-align: center;
+	padding-top: 20px;
+	box-shadow: 1px 5px 14px 0px rgba(0,0,0,0.64);
+	-webkit-box-shadow: 1px 5px 14px 0px rgba(0,0,0,0.64);
+	-moz-box-shadow: 1px 5px 14px 0px rgba(0,0,0,0.64);
+}
+
+
+.title-service{
+	border-bottom: 1px solid #EEE;
+	padding: 25px;
+	margin: 0;
+}
+
+.card-service h4{
+	color: var(--primary);
+	font-size: 1.2em;
+	background: #333;
+	padding: 10px;
 }
 
 .card-service i{
@@ -251,7 +250,7 @@ a{
 
 .title-service{
 	color: var(--black-primary);
-	margin-bottom: 4rem;
+	margin-bottom: 1rem;
 }
 
 
@@ -273,54 +272,64 @@ a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 50px;
+	margin: 25px 0;
 	height: 100px;
 	width: 100%;
 }
 
 .card-proyecto{
-	background: #333;
-	box-shadow: -2px 2px 10px #a5a5a5;
+	box-shadow: 1px 1px 10px #a5a5a5;
 	width: 294px;
 	margin: 2rem 20px;
 	/*cursor: pointer;*/
 	position: relative;
+	border-radius: 7px;
+	overflow: hidden;
 }
+
 
 .card-proyecto img{
 	width: 100%;
 }
 
-.btn-proyectos{
-	margin: 15px auto;
+.card-proyecto-content{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+
 }
 
-.card-proyecto_hover{
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: rgba(165,165,165, 0.7);
+.card-proyecto-content h5{
+	margin: 0;
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: normal;
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+	padding: 15px 0;
+}
+
+.card-proyecto-content p{
+	padding: 5px 5px 20px 5px;
+	color: #666;
+	margin: 0;
+	text-align: center;
+}
+.card-proyecto-link{
 	width: 100%;
-	height: 100%;
-	opacity: 0;
-	transition: 0.5s;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	transition: 0.5s;
 }
 
-.card-proyecto_hover a{
-	background: var(--primary);
-	border-radius: 10px;
-	color: white;
-	font-family: Roboto;
-	font-size: 1.250em;
-	padding: 10px 20px;
+.card-proyecto-link a{
+	color: var(--primary);
+	padding-bottom: 20px;	
+	display: inline-block;
+	margin: 0 5px;
+	font-weight: bold;
 }
 
-.card-proyecto:hover .card-proyecto_hover{
-	opacity: 1;
+.card-proyecto-link a:hover{
+	color: var(--primary-hover);
 }
 
 .card-proximamente{
@@ -352,19 +361,18 @@ a{
 }
 
 .sobremi p{
+	border-left: 1px solid white;
 	color: white;
 	font-family: Roboto;
 	font-size: 1.125em;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	align-items: center;
-	border-left: 1px solid white;
+	line-height: 1.5;
 	padding-left: 50px;
 	padding-right: 20px;
 	width: 50%;	
+}
+
+.sobremi p b{
+	font-weight: bold;
 }
 
 .sobremi-avatar{
@@ -488,6 +496,29 @@ a{
 	animation-delay: 0s;
 }
 
+@keyframes slideFromRight{
+	from{left: -2000px;}
+	to{left: 0px;}
+}
+.slideFromRight{
+	position: relative;
+	animation-name: slideFromRight;
+	animation-duration: 1.5s;
+	animation-delay: 0s;
+}
+
+@keyframes slideFromLeft{
+	from{left: 2000px;}
+	to{left: 0px;}
+}
+.slideFromLeft{
+	position: relative;
+	animation-name: slideFromLeft;
+	animation-duration: 2.5s;
+	animation-delay: 0s;
+}
+
+
 /*Tablet*/
 @media screen and (max-width: 992px) {
 
@@ -552,8 +583,7 @@ a{
 
 	/*header*/
 	.header-content{
-		transform: translateX(0);
-		margin: 0;
+		font-size: 0.8rem;
 	}
 
 	/* servicios 
@@ -590,6 +620,10 @@ a{
 
 	.navbar-redes{
 		padding-bottom: 20px;
+	}
+
+	.header-content{
+		font-size: 0.7rem;
 	}
 
 	.proyectos > .container{
@@ -645,7 +679,7 @@ a{
 	}
 
 	.header-content{
-		width: 90%;
+		font-size: 0.5rem;
 	}
 
 	.sobremi-avatar{
