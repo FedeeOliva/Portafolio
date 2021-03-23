@@ -356,19 +356,20 @@ a{
 }
 
 .sobremi > .container{
-	display: flex;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
-
-.sobremi p{
+.sobremi-text{
 	border-left: 1px solid white;
+}
+.sobremi p{
+	
 	color: white;
 	font-family: Roboto;
 	font-size: 1.125em;
 	line-height: 1.5;
 	padding-left: 50px;
 	padding-right: 20px;
-	width: 50%;	
 }
 
 .sobremi p b{
@@ -636,12 +637,17 @@ a{
 		padding: 2rem 0 0 0;
 	}
 	.sobremi .container{
+		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding: 20px;
 	}
-	.sobremi .container p{
+
+	.sobremi-text{
 		border: none;
+	}
+	.sobremi .container p{
+		
 		padding: 0;		
 		margin: 20px 0;
 		width: 100%
@@ -685,6 +691,9 @@ a{
 	.sobremi-avatar{
 		width: 55%;
 		height: auto;
+	}
+	.sobremi-text{
+		text-align: center;
 	}
 	.formulario{
 		font-size: 0.85rem;
