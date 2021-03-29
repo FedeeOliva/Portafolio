@@ -49,7 +49,6 @@
 	buttons.forEach( button => {
 	    button.addEventListener('click', smoothScroll);
 	});
-	saberMas.addEventListener('click', smoothScroll);
 
 })();
 
@@ -93,6 +92,6 @@
 		e.target.reset();
 	}
 
-	formulario.addEventListener('submit', handleSubmit);	
-	formulario.addEventListener('input', handleValid);
+	document.getElementById('formulario').addEventListener('submit', handleSubmit);	
+	document.getElementById('formulario').addEventListener('input', handleValid);
 })();
