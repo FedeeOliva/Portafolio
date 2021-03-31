@@ -161,6 +161,7 @@ a{
 	font-family: 'Raleway', sans-serif;
 	text-decoration: none;
 	cursor: pointer;
+	font-weight: bold;
 }
 .btn-primary:hover{
 	background: var(--primary-hover);
@@ -578,7 +579,7 @@ a{
 	.navbar-redes > a:last-child{
 		margin: 0 ;
 	}
-	#btnContactar{
+	#btnCV{
 		display: none;
 	}
 
