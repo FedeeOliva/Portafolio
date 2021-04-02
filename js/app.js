@@ -1,7 +1,7 @@
 "use strict";
 /*mostrar barra de navegacion*/
-(()=>{
-	const icono = showNavbar.getElementsByClassName('fas')[0];
+{
+	const icono = showNavbar.querySelector('i')
 	const toggleNavbar = e =>{
 		navbar.classList.toggle('navbar-active');
 
@@ -12,10 +12,10 @@
 		}
 	}
 	showNavbar.addEventListener('click', toggleNavbar);
-})();
+}
 
 /*Ocultar barra al scroll*/
-(()=>{
+{
 	let lastScrollPos = window.scrollY;
 
 	const handleScroll = () => {
@@ -29,10 +29,10 @@
 		}
 	}
 	window.addEventListener('scroll', handleScroll);
-})();
+}
 
 /*Smooth Scroll*/
-(()=>{
+{
 	const smoothScroll = e => {
 		e.preventDefault();
 		let target = e.currentTarget.getAttribute('href');		      
@@ -50,10 +50,10 @@
 	    button.addEventListener('click', smoothScroll);
 	});
 
-})();
+}
 
 /*Formulario*/
-(() =>{
+{
 	email.addEventListener('invalid', () => {
 		email.setCustomValidity("Ingrese una correo válido");
 	});
@@ -94,4 +94,4 @@
 
 	document.getElementById('formulario').addEventListener('submit', handleSubmit);	
 	document.getElementById('formulario').addEventListener('input', handleValid);
-})();
+}
