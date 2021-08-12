@@ -415,7 +415,7 @@ a{
 	display: flex;
 	flex-direction: column;
 	font-size: 1rem;
-	height: 40.625em; /* 650/16 */	
+	min-height: 40.625em; /* 650/16 */	
 	max-width: 700px;
 	margin: 0 0 40px 0;
 	width: 50%;
@@ -440,13 +440,22 @@ a{
 	text-align: center;
 	width: 80%;
 }
+.formulario .input{
+	min-height: 3.4375em;
+}
 
 .formulario .input:active, .formulario textarea:active{
 	outline: none;
 }
+.formulario .input:focus, .formulario textarea:focus{
+	outline: none;
+}
+
 .formulario textarea{
 	height: 8.125em; /* 130/16 */
 	padding: 0.625em; /* 10/16 */
+	min-width: 80%;
+	min-height: 3.4375em;
 }
 
 .formulario .submit{
@@ -526,7 +535,7 @@ a{
 
 
 /*Tablet*/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1040px) {
 
 	h2{
 		font-size: 2.1em;
